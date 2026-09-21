@@ -1,0 +1,19 @@
+[project]
+name = "my-first-mcp-server"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "aniketgoyal12", email = "goyalaniket2006@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "mcp[cli]<2",
+]
+
+[project.scripts]
+my-first-mcp-server = "my_first_mcp_server:main"
+
+[build-system]
+requires = ["uv_build>=0.12.17,<0.13.0"]
+build-backend = "uv_build"

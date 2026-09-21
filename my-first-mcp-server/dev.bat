@@ -1,0 +1,3 @@
+@echo off
+echo Starting MCP Inspector...
+npx -y @modelcontextprotocol/inspector .venv\Scripts\python.exe server.py
