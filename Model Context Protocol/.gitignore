@@ -2,7 +2,6 @@
 **/.venv/
 **/venv/
 **/env/
-**/ENV/
 
 # Python cache & build files
 **/__pycache__/
@@ -19,10 +18,7 @@
 # Node modules & logs
 **/node_modules/
 **/npm-debug.log*
-**/yarn-error.log*
 
-# IDE & OS specific files
-.vscode/
-.idea/
+# OS specific files
 .DS_Store
 Thumbs.db

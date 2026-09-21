@@ -1,59 +1,57 @@
-# Model Context Protocol (MCP) 🚀
+# Generative AI (GenAI) 🤖✨
 
-Repository containing hands-on implementations, custom tools, and servers built while learning the **Model Context Protocol (MCP)** from **Claude Academy (Anthropic)**.
-
----
-
-## 📌 About MCP (Model Context Protocol)
-
-The **Model Context Protocol (MCP)** is an open standard developed by Anthropic that allows AI models (like Claude) to securely connect to external tools, data sources, and services. MCP replaces fragmented, one-off integrations with a clean, standardized client-server protocol.
+Welcome to the **GenAI** repository! This repository is dedicated to hands-on implementations, practical experiments, and production-grade architectures across the modern Generative AI landscape.
 
 ---
 
-## 📂 Projects in this Repository
+## 📂 Repository Structure
 
-### 1. [`my-first-mcp-server`](./my-first-mcp-server/) — Document Management MCP Server
-A custom MCP server built using Python and the **FastMCP** SDK that exposes tools for reading and editing in-memory documents.
-
-#### 🛠️ Features & Tools:
-* **`read_doc_contents`**: Reads and retrieves document text given a `doc_id` (e.g., `deposition.md`, `report.pdf`, `plan.md`).
-* **`edit_doc_contents`**: Modifies document content by performing a string replacement (`old_str` ➔ `new_str`) and returns the updated state.
-
-#### 🚀 How to Run & Test:
-
-1. **Navigate to the server directory:**
-   ```bash
-   cd my-first-mcp-server
-   ```
-
-2. **Activate Virtual Environment:**
-   * **Windows (PowerShell):**
-     ```powershell
-     .\.venv\Scripts\Activate.ps1
-     ```
-
-3. **Launch MCP Inspector (Interactive Web UI):**
-   ```bash
-   .\dev.bat
-   ```
-   Or using Python directly:
-   ```bash
-   npx -y @modelcontextprotocol/inspector .venv\Scripts\python.exe server.py
-   ```
-   * Open the URL in your browser (defaults to `http://127.0.0.1:6274`).
-   * Navigate to the **Tools** tab to test `read_doc_contents` and `edit_doc_contents`.
+```text
+GenAI/
+│
+├── Model Context Protocol/                 # Anthropic's Model Context Protocol (MCP) implementations
+│   ├── README.md                           # MCP overview, architecture & documentation
+│   └── my-first-mcp-server/                # Document Management MCP Server (FastMCP)
+│
+├── .gitignore                              # Global gitignore rules
+└── README.md                               # Root repository overview (this file)
+```
 
 ---
 
-## 🛠️ Tech Stack & Prerequisites
-* **Language:** Python 3.14+
-* **Framework:** FastMCP (`mcp[cli]`)
-* **Package / Environment Manager:** `uv` / `pip`
-* **Inspector:** `@modelcontextprotocol/inspector` (Node.js / npx)
+## 🚀 Modules & Topics
+
+### 1. [Model Context Protocol (MCP)](./Model%20Context%20Protocol/)
+The **Model Context Protocol (MCP)** is an open standard developed by Anthropic allowing AI systems to seamlessly interact with external data sources, tools, and services in a unified way.
+
+* **Documentation & Overview:** [Model Context Protocol README](./Model%20Context%20Protocol/README.md)
+* **Projects:**
+  * **[`my-first-mcp-server`](./Model%20Context%20Protocol/my-first-mcp-server/)**: A custom MCP server built using Python & FastMCP SDK that exposes tools for reading and editing documents with MCP Inspector testing support.
 
 ---
 
-## 📚 Learning Reference
-* **Course / Guide:** Claude Academy - Model Context Protocol
-* **Official MCP Documentation:** [modelcontextprotocol.io](https://modelcontextprotocol.io)
-* **Anthropic SDK:** [FastMCP for Python](https://github.com/modelcontextprotocol/python-sdk)
+## 🛠️ Tech Stack & Tooling
+
+* **Languages:** Python 3.12+
+* **Frameworks & SDKs:** FastMCP (`mcp[cli]`), LangChain, LlamaIndex, OpenAI / Anthropic SDKs
+* **Package Managers:** `uv`, `pip`
+* **Development & Debugging:** `@modelcontextprotocol/inspector`
+
+---
+
+## 🗺️ Roadmap & Upcoming Explorations
+
+- [x] **Model Context Protocol (MCP)**
+  - [x] FastMCP Document Management Server
+  - [ ] Multi-tool MCP Servers & SQLite database integrations
+  - [ ] Custom MCP Clients
+- [ ] **AI Agents & Orchestration** (LangGraph, CrewAI, AutoGen)
+- [ ] **Retrieval Augmented Generation (RAG)** & Vector Databases (Chroma, Qdrant, Pinecone)
+- [ ] **Function Calling & Structured Outputs**
+- [ ] **Fine-Tuning & Evaluation**
+
+---
+
+## 👤 Author
+
+Developed and maintained by **[aniketgoyal12](https://github.com/aniketgoyal12)**.
